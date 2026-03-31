@@ -1,9 +1,11 @@
 import time
 from datetime import datetime
 
+#time
 current_timestamp  = time.time()
 print(f"Seconds since January 1, 1970: {current_timestamp:,.4f} or {current_timestamp:.2e} in scientific notation")
 
+#date
 dttime = datetime.fromtimestamp(current_timestamp)
 date_format = dttime.strftime("%b %d %Y")
 print(date_format)
