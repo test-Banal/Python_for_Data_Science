@@ -25,3 +25,5 @@ def NULL_not_found(object: any) -> int:
 
 # Ressources :
 # https://ladatascience.fr/2023/09/25/tester-variable-none-python
+# https://stackoverflow.com/questions/944700/how-to-check-for-nan-values
+# https://courspython.com/types.html
