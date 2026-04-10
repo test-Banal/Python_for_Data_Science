@@ -1,8 +1,9 @@
 import math
-def NULL_not_found(object: any) -> int:
-    x = object
 
-    if (x ==  None and object is None):
+
+def NULL_not_found(object: any) -> int:
+
+    if (object is None):
         print(f"Nothing: {object} {type(object)}")
 
     elif (isinstance(object, float) and math.isnan(object)):
@@ -11,12 +12,11 @@ def NULL_not_found(object: any) -> int:
     elif (isinstance(object, bool)):
         print(f"Fake: {object} {type(object)}")
 
-    elif (object == 0 and type (object) is int):
+    elif (object == 0 and type(object) is int):
         print(f"Zero: {object} {type(object)}")
 
     elif (object == ""):
         print(f"Empty: {type(object)}")
-
 
     else:
         print("Type not Found")
