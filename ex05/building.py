@@ -46,5 +46,5 @@ if __name__ == '__main__':
     main()
 
 
-# ressources : https://docs.python.org/fr/3/library/__main__.html
-# ressources : https://www.w3schools.com/python/python_user_input.asp
+# ressource : https://docs.python.org/fr/3/library/__main__.html
+# ressource : https://www.w3schools.com/python/python_user_input.asp
