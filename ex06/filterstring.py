@@ -21,4 +21,5 @@ def main():
 if __name__ == "__main__":
     main()
 # ressource : https://csatlas.com/python-import-file-module/
-# ressource : https://realpython.com/python-filter-function/#coding-with-pythonic-styleexi
+# ressource : https://realpython.com/python-filter-function/#coding-with
+# -pythonic-styleexi

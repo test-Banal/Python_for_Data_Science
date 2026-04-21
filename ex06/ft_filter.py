@@ -10,6 +10,7 @@ def ft_filter(funct, iterable) -> list:
 
 # function is None: Si aps de fonction fournie garde les elements truth)
 
+
 ''' Ici avec une boucle for et pas une liste comprehension
 def ft_filter(funct, *iterable) -> list:
     result = []
