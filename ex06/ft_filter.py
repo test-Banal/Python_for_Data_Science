@@ -1,15 +1,18 @@
+def ft_filter(funct, *iterable) -> list:
+    result = []
+    for i in iterable:
+        if funct is None:
+            if i:
+                result.append(i)
+        else:
+            if funct(i):
+                result.append(i)
+    return (result)
 
-def function(x):
-    return x > 4
-
-
-def ft_filter(int, list) -> list:
-    newlist = []
-
-#1) a partir de str = list des mots
-#2) ensuite for list : if (len(mot) > int N): ajouter a newlist
-#3) print(newlist)
-
-print(newlist)
 
 # ressource : https://gayerie.dev/docs/python/python3/list_comprehension.html
+
+# ressource : https://medium.com/norsys-octogone/exploration-de-python-
+# traitement-des-s%C3%A9quences-avec-un-style-fonctionnel-filter-4da4d9ae6367
+
+# function is None: Si aps de fonction fournie garde les elements truth)
