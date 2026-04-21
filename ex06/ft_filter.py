@@ -1,4 +1,7 @@
 def ft_filter(funct, iterable) -> list:
+    """ Reimplementation of built-in filter() using list comprehension.
+    Returns elements of iterable for which funct returns True, or truthy
+    elements if funct is None."""
     if funct is None:
         return [i for i in iterable if i]
     return [i for i in iterable if funct(i)]
@@ -7,6 +10,8 @@ def ft_filter(funct, iterable) -> list:
 
 # ressource : https://medium.com/norsys-octogone/exploration-de-python-
 # traitement-des-s%C3%A9quences-avec-un-style-fonctionnel-filter-4da4d9ae6367
+
+# ressource : https://www.datacamp.com/fr/tutorial/python-filter
 
 # function is None: Si aps de fonction fournie garde les elements truth)
 
