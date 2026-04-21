@@ -1,34 +1,24 @@
-from ft_filter import ft_filter
 import sys
+from ft_filter import ft_filter
 
-# Filtering function
-def is_sup_four(word):
-    """Function to check if str > 4, cf subject"""
-    return len(word) > 4
 
 def main():
-    """Program to filter elements with a condition. 
-    A partir d'une string S et d'un entier N.
-    """
-    try :
-        if (len(sys.argv) == 3):
-            list_S = sys.argv[1]
-            int_N = sys.argv[2]
-            num_N = int(int_N)
-            if (type(num_N) is not int):
-                print("Error type argument")
-            list_sf = list_S.split()
-            ft_filter(is_sup_four(), list_sf)
-            
-    except:
-        
-        
-    return 
+    """Filter words from a string that are longer than a given integer N."""
+    try:
+        assert len(sys.argv) == 3, "the arguments are bad"
+        list_S = sys.argv[1]
+        int_N = sys.argv[2]
+        assert isinstance(list_S, str) and int_N.lstrip('-').isdigit(), \
+            "the arguments are bad"
+        num_N = int(int_N)
+        list_sf = list_S.split()
+        result = ft_filter(lambda x: len(x) > num_N, list_sf)
+        print(result)
+    except AssertionError as e:
+        print(f"AssertionError: {e}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-
-
 # ressource : https://csatlas.com/python-import-file-module/
 # ressource : https://realpython.com/python-filter-function/#coding-with-pythonic-styleexi
