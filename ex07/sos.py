@@ -30,7 +30,7 @@ def main():
     """Do a Morse Code code from a string
     Take alphanumeric characters and space
     Space : /
-    Alphanumeric :  . - 
+    Alphanumeric - .
     Have to use a dictionary
     """
 #        assert (len(sys.argv == 2)), "wrong number of arguments"
@@ -70,7 +70,7 @@ if __name__ == "__main__":
 
 def main():
     try:
-        assert len(sys.argv) == 2 or len(sys.argv[1] == 0), "Wrong number of 
+        assert len(sys.argv) == 2 or len(sys.argv[1] == 0), "Wrong number of
         arguments, expected 2 argument"
         if (len(sys.argv[1]) == 0):
             print("test nulle")
@@ -82,3 +82,5 @@ def main():
         print(f"AssertionError: {e}")
     except KeyError as e:
         print(f"Caractère non supporté : {e}")"""
+
+# https://www.lexilogos.com/clavier/morse.htm
