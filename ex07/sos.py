@@ -17,6 +17,10 @@ MORSE_CODE_DICT = {'A': '.-', 'B': '-...',
 
 
 def encrypt(message):
+    """
+    Function to encrypt text in Morse Code
+    Using a dictionnary.
+    """
     result = ''
     for letter in message:
         if letter != ' ':
