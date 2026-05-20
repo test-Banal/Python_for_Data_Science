@@ -1,0 +1,6 @@
+total = len(lst) => on recupere le nombre total d'elements
+term_size = os.get_terminal_size().columns => recupere le nombre tot de colonne du get_terminal_size
+
+print(f"\r{percent:3}%|[{bar}]| {i}/{total}", end="")
+-> affichage de la barre 
+{percent:3} : affiche le pourcentage sur 3 caracteres pour rester aligne
