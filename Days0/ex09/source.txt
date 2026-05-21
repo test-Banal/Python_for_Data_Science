@@ -1,0 +1,7 @@
+https://choosealicense.com/licenses/mit/ : LICENSE
+
+https://www.ionos.fr/digitalguide/sites-internet/developpement-web/python-count/ : fonction count_in_lsit
+
+https://www.commentcoder.com/python-fichier-init/
+
+https://blog.stephane-robert.info/docs/developper/programmation/python/modules/
